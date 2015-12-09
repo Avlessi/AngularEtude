@@ -21,9 +21,14 @@
     <script src="app.js"></script>
 
     <div id="myList" ng-controller="myCtrl">
+
+   
       <ul>
-        <li ng-repeat="people as person">{{person.firstName}} {{person.lastName}}</li>
+         <li ng-repeat="person in people track by $index">{{person.firstName}} {{person.lastName}}</li> 
       </ul>
+    
+    {{pupil.name}}
+
     </div>
 
 
